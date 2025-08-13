@@ -348,7 +348,9 @@ mtls/
 
 **If EKU or CN/SAN mismatches, handshake fails.**
 
-
+In this client folder for client2.crt created with Client_extent.cnf
+for the client2.csr created eith openssl.cnf
+it is the correct process csr with openssl and crt with Client_extent
 
 
 
