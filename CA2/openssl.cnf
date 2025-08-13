@@ -1,0 +1,20 @@
+[ req ]
+default_bits       = 2048
+distinguished_name = req_distinguished_name
+x509_extensions    = v3_ca
+prompt             = yes
+
+[ req_distinguished_name ]
+C  = Country Name (2 letter code)
+ST = State or Province Name
+L  = Locality Name
+O  = Organization Name
+OU = Organizational Unit Name
+CN = Common Name
+emailAddress = Email Address
+
+[ v3_ca ]
+subjectKeyIdentifier=hash
+authorityKeyIdentifier=keyid:always,issuer
+basicConstraints = critical, CA:true
+keyUsage = critical, digitalSignature, cRLSign, keyCertSign
